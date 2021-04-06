@@ -24,7 +24,7 @@ Always review your work before committing it.
 Write good commit messages: A 50 character summary written in imperative ("fix signup") or as a short summary for features ("logout button"), followed by an empty line, followed by an optional longer description.
 
 ## Resolving conflicts
-Conflicts happen when two developers change the same line in the same file at the same time. To resolve them, open the conflicting files in your editor and resolve the conflicts. Make sure you consider that both sides of the conflict contain changes that happened at the same time, so both changes should be present in your resolved code.
+Conflicts happen when two developers change the same line in the same file at the same time. To [resolve](https://docs.gitlab.com/ee/user/project/merge_requests/resolve_conflicts.html) them, you may need to open the conflicting files in your editor and resolve the conflicts but sometimes you can do it directy in GitHub for small conflicts. Make sure you consider that both sides of the conflict contain changes that happened at the same time, so both changes should be present in your resolved code.
 
 ## Pull Requests
 When you are done with a feature, submit a pull request so that it can be reviewed and merged into the development branch (main).
@@ -38,8 +38,9 @@ Everyone can (and should) review everyone else's pull requests.
 All feedback given in a PR must be at least addressed, i.e. if you don't want to do it, say why and come to an agreement with your reviewer about this issue. Getting a third opinion is a good option.
 
 When a PR gets LGTMed ("looks good to me"), it will be merged by the author, and the feature branch should be deleted from both the local machine as well as from Github.
+Optional: You may want to do a [squash and merge](https://docs.gitlab.com/ee/user/project/merge_requests/squash_and_merge.html) or to squash the feature branch before sending the PR to have a more readable history.
 
-If you get a warning that a PR cannot be automatically merged because of conflicts, you have to take back the PR and fix them in your branch (do a rebase or pull from main).
+If you get a warning that a PR cannot be automatically merged because of conflicts, you have to take back the PR and fix them in your branch. The best option for that is to do a [rebase](https://docs.gitlab.com/ee/topics/git/git_rebase.html#git-rebase).
 
 ## Tools
 
